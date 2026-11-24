@@ -39,7 +39,12 @@ pytest -v
 ```
 
 ## Capturas de la Interfaz
-*(Agregar aquí al menos 3 capturas guardadas en la carpeta `capturas/`)*
-1. `capturas/01_ventana_principal.png`
-2. `capturas/02_tabla_resultados.png`
-3. `capturas/03_graficas_convergencia.png`
+
+1. **Ventana principal**
+   ![Ventana principal](capturas/01_ventana_principal.png)
+
+2. **Tabla de resultados**
+   ![Tabla de resultados](capturas/02_tabla_resultados.png)
+
+3. **Gráficas de convergencia**
+   ![Gráficas de convergencia](capturas/03_graficas_convergencia.png)
