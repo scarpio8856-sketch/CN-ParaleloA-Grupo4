@@ -8,7 +8,7 @@ from PySide6.QtWidgets import (
     QTableWidgetItem,
     QVBoxLayout,
 )
-from ui_ventana_principal import Ui_MainWindow
+from ui.ventana_principal_ui import Ui_MainWindow
 from metodo.biseccion import biseccion, busqueda_incremental
 from metodo.graficas import (
     LienzoGrafica,

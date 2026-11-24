@@ -76,13 +76,13 @@
             <number>6</number>
            </property>
            <property name="minimum">
-            <double>-100000.000000</double>
+            <double>-100000.000000000000000</double>
            </property>
            <property name="maximum">
-            <double>100000.000000</double>
+            <double>100000.000000000000000</double>
            </property>
            <property name="singleStep">
-            <double>0.100000</double>
+            <double>0.100000000000000</double>
            </property>
           </widget>
          </item>
@@ -99,16 +99,16 @@
             <number>6</number>
            </property>
            <property name="minimum">
-            <double>-100000.000000</double>
+            <double>-100000.000000000000000</double>
            </property>
            <property name="maximum">
-            <double>100000.000000</double>
+            <double>100000.000000000000000</double>
            </property>
            <property name="singleStep">
-            <double>0.100000</double>
+            <double>0.100000000000000</double>
            </property>
            <property name="value">
-            <double>1.000000</double>
+            <double>1.000000000000000</double>
            </property>
           </widget>
          </item>
@@ -125,16 +125,16 @@
             <number>6</number>
            </property>
            <property name="minimum">
-            <double>0.000001</double>
+            <double>0.000001000000000</double>
            </property>
            <property name="maximum">
-            <double>100.000000</double>
+            <double>100.000000000000000</double>
            </property>
            <property name="singleStep">
-            <double>0.010000</double>
+            <double>0.010000000000000</double>
            </property>
            <property name="value">
-            <double>0.010000</double>
+            <double>0.010000000000000</double>
            </property>
           </widget>
          </item>
@@ -199,16 +199,16 @@
             <number>4</number>
            </property>
            <property name="minimum">
-            <double>0.000100</double>
+            <double>0.000100000000000</double>
            </property>
            <property name="maximum">
-            <double>1000.000000</double>
+            <double>1000.000000000000000</double>
            </property>
            <property name="singleStep">
-            <double>0.050000</double>
+            <double>0.050000000000000</double>
            </property>
            <property name="value">
-            <double>0.100000</double>
+            <double>0.100000000000000</double>
            </property>
           </widget>
          </item>
@@ -249,7 +249,7 @@
        <item>
         <spacer name="verticalSpacerEntrada">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -271,7 +271,7 @@
        <item>
         <widget class="QTabWidget" name="tabGraficas">
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="tabFuncion">
           <attribute name="title">
@@ -301,10 +301,10 @@
            <item>
             <widget class="QLabel" name="lblAcercaDe">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Proyecto de Aula: Método de Bisección (Proyecto B - Grupo 4)&lt;/h3&gt;&lt;p&gt;&lt;b&gt;Asignatura:&lt;/b&gt; Cálculo Numérico (MECATR24) — Quinto Nivel, Ingeniería Mecatrónica&lt;/p&gt;&lt;p&gt;&lt;b&gt;Caso de aplicación obligatorio:&lt;/b&gt; Punto de operación de un diodo semiconductor (Vs = 5 V, R = 1 kΩ, Is = 1×10⁻¹² A, VT = 25.85 mV)&lt;/p&gt;&lt;p&gt;&lt;b&gt;Paralelo:&lt;/b&gt; [Colocar Paralelo A o B]&lt;/p&gt;&lt;p&gt;&lt;b&gt;Integrantes del Equipo (4):&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Integrante 1 (Lógica numérica): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 2 (Interfaz Qt Designer): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 3 (Controlador y gráficas): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 4 (Pruebas y documentación): [Nombre Apellido]&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;Proyecto de Aula: Método de Bisección (Proyecto B - Grupo 4)&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Asignatura:&lt;/span&gt; Cálculo Numérico (MECATR24) — Quinto Nivel, Ingeniería Mecatrónica&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Caso de aplicación obligatorio:&lt;/span&gt; Punto de operación de un diodo semiconductor (Vs = 5 V, R = 1 kΩ, Is = 1×10⁻¹² A, VT = 25.85 mV)&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Paralelo:&lt;/span&gt; A&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Integrantes del Equipo (4):&lt;/span&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Integrante 1 (Lógica numérica): JOSÉ STEVEN NAVARRETE RIVAS&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Integrante 2 (Interfaz Qt Designer): JUNIOR ALEXANDER HERRERA CHÁVEZ&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Integrante 3 (Controlador y gráficas): STEVEN JOSUÉ CARPIO FRANCO&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Integrante 4 (Pruebas y documentación): ALAN FLAUBERT FIERRO YANZA&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
              </property>
              <property name="wordWrap">
               <bool>true</bool>
