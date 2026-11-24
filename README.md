@@ -3,10 +3,10 @@
 Aplicación de escritorio desarrollada en **Python** con **PySide6 (Qt Designer)**, **SymPy**, **NumPy** y **Matplotlib** para la asignatura **Cálculo Numérico (MECATR24)** (Quinto Nivel, Ingeniería Mecatrónica).
 
 ## Integrantes y Roles (Equipo de 4)
-- **Integrante 1 — Lógica numérica (`metodo/biseccion.py`):** [Nombre Apellido]
-- **Integrante 2 — Interfaz gráfica (`ui/ventana_principal.ui`):** [Nombre Apellido]
-- **Integrante 3 — Controlador y gráficas (`main.py`, `metodo/graficas.py`):** [Nombre Apellido]
-- **Integrante 4 — Pruebas y documentación (`tests/test_metodo.py`, `README.md`):** [Nombre Apellido]
+- **Integrante 1 — Lógica numérica (`metodo/biseccion.py`):** JOSÉ STEVEN NAVARRETE RIVAS
+- **Integrante 2 — Interfaz gráfica (`ui/ventana_principal.ui`):** JUNIOR ALEXANDER HERRERA CHÁVEZ
+- **Integrante 3 — Controlador y gráficas (`main.py`, `metodo/graficas.py`):** STEVEN JOSUÉ CARPIO FRANCO
+- **Integrante 4 — Pruebas y documentación (`tests/test_metodo.py`, `README.md`):** ALAN FLAUBERT FIERRO YANZA
 
 ## Descripción del Caso de Aplicación (Grupo 4)
 Determinación del **punto de operación ($V_d$)** de un diodo semiconductor en serie con una fuente $V_S = 5\text{ V}$ y una resistencia $R = 1\text{ k}\Omega$, con corriente de saturación $I_s = 1\times 10^{-12}\text{ A}$ y voltaje térmico $V_T = 25.85\text{ mV}$:
