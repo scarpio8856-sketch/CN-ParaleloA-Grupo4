@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1220</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cálculo Numérico - Método de Bisección (Grupo 4: Diodo)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayoutMain" stretch="1,3">
+    <item>
+     <widget class="QGroupBox" name="grpEntrada">
+      <property name="title">
+       <string>Parámetros de entrada</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutEntrada">
+       <item>
+        <layout class="QFormLayout" name="formLayoutParametros">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblEjemplos">
+           <property name="text">
+            <string>Caso / Ejemplo:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cmbEjemplos">
+           <item>
+            <property name="text">
+             <string>Caso Grupo 4: Punto de operación de un diodo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ejemplo libro (Chapra): Paracaidista</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ejemplo libro: exp(-x) - x</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblFuncion">
+           <property name="text">
+            <string>Función f(x):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="txtFuncion">
+           <property name="placeholderText">
+            <string>Ej: exp(-x) - x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblXl">
+           <property name="text">
+            <string>Límite inferior (xl):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="spnXl">
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="minimum">
+            <double>-100000.000000</double>
+           </property>
+           <property name="maximum">
+            <double>100000.000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblXu">
+           <property name="text">
+            <string>Límite superior (xu):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="spnXu">
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="minimum">
+            <double>-100000.000000</double>
+           </property>
+           <property name="maximum">
+            <double>100000.000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000</double>
+           </property>
+           <property name="value">
+            <double>1.000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lblEs">
+           <property name="text">
+            <string>Tolerancia εs (%):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="spnEs">
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="minimum">
+            <double>0.000001</double>
+           </property>
+           <property name="maximum">
+            <double>100.000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000</double>
+           </property>
+           <property name="value">
+            <double>0.010000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="lblMaxIter">
+           <property name="text">
+            <string>Máx. iteraciones:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="spnMaxIter">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="lblValorVerdadero">
+           <property name="text">
+            <string>Valor verdadero (opc.):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="txtValorVerdadero">
+           <property name="placeholderText">
+            <string>Opcional para calcular εt (%)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="lblUnidades">
+           <property name="text">
+            <string>Unidades físicas:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="txtUnidades">
+           <property name="text">
+            <string>V</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="lblPasoDx">
+           <property name="text">
+            <string>Paso búsqueda Δx:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QDoubleSpinBox" name="spnPasoDx">
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="minimum">
+            <double>0.000100</double>
+           </property>
+           <property name="maximum">
+            <double>1000.000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.050000</double>
+           </property>
+           <property name="value">
+            <double>0.100000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayoutBotones">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btnCalcular">
+           <property name="text">
+            <string>Calcular</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btnBuscarIntervalos">
+           <property name="text">
+            <string>Buscar intervalos (Δx)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btnLimpiar">
+           <property name="text">
+            <string>Limpiar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btnExportar">
+           <property name="text">
+            <string>Exportar CSV</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacerEntrada">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpResultados">
+      <property name="title">
+       <string>Resultados, Tabla y Gráficas</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutResultados" stretch="3,2,1">
+       <item>
+        <widget class="QTabWidget" name="tabGraficas">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabFuncion">
+          <attribute name="title">
+           <string>Gráfica f(x)</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="layoutTabFunc">
+           <item>
+            <widget class="QWidget" name="widgetGraficaFuncion" native="true"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabError">
+          <attribute name="title">
+           <string>Convergencia εa</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="layoutTabError">
+           <item>
+            <widget class="QWidget" name="widgetGraficaError" native="true"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabAcercaDe">
+          <attribute name="title">
+           <string>Acerca de</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="layoutTabAcerca">
+           <item>
+            <widget class="QLabel" name="lblAcercaDe">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Proyecto de Aula: Método de Bisección (Proyecto B - Grupo 4)&lt;/h3&gt;&lt;p&gt;&lt;b&gt;Asignatura:&lt;/b&gt; Cálculo Numérico (MECATR24) — Quinto Nivel, Ingeniería Mecatrónica&lt;/p&gt;&lt;p&gt;&lt;b&gt;Caso de aplicación obligatorio:&lt;/b&gt; Punto de operación de un diodo semiconductor (Vs = 5 V, R = 1 kΩ, Is = 1×10⁻¹² A, VT = 25.85 mV)&lt;/p&gt;&lt;p&gt;&lt;b&gt;Paralelo:&lt;/b&gt; [Colocar Paralelo A o B]&lt;/p&gt;&lt;p&gt;&lt;b&gt;Integrantes del Equipo (4):&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Integrante 1 (Lógica numérica): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 2 (Interfaz Qt Designer): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 3 (Controlador y gráficas): [Nombre Apellido]&lt;/li&gt;&lt;li&gt;Integrante 4 (Pruebas y documentación): [Nombre Apellido]&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tablaResultados"/>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="txtResultado">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>140</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
